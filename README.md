@@ -9,20 +9,20 @@ Python3.6
 **Clone o repositório**
 
     $ git clone https://github.com/AmarEL/github_scrapy.git
-    $ cd
+    $ cd github_scrapy/
 
 **Intale os pacotes da aplicação**
 
-    pip install -r requirements.txt
-----
-"""
-
-## Crawler Execution
+    $ pip install -r requirements.txt
 
 
+## Crawler Execution  
+1. Mova o arquivo de entrada 'repositories.txt' para a raiz do projeto  
+2. Execute o crawler com o comando:  
+    $ python github_crawler.py repositories.txt 
 
-A entrada precisa conter em cada linha `<dono-do-projeto>/<nome-do-projeto>`:
-```txt
-frontpressorg/frontpress
-SambitAcharya/Mini-Projects
-```
+Os resultados podem ser visualizados no diretório "repositories", em que cada corresponde a um repositório.  
+Ex: frontpressorg_frontpress.txt == frontpressorg/frontpress
+
+
+
