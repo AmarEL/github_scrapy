@@ -1,0 +1,230 @@
+frontpressorg/frontpress
+Extensão    Linhas        Bytes
+----------  ------------  -------------
+sample      34 (0 %)      787 (0 %)
+enc         0 (0 %)       3246 (0 %)
+js          17533 (96 %)  765230 (97 %)
+json        95 (0 %)      2368 (0 %)
+md          202 (1 %)     6972 (0 %)
+yml         12 (0 %)      207 (0 %)
+<outros>    62 (0 %)      1115 (0 %)
+sh          75 (0 %)      2157 (0 %)
+html        130 (0 %)     5703 (0 %)
+
+[Project frontpressorg/frontpress]
+├── frontpress.json.v1.sample (17 linhas)
+├── deploy_key.enc (0 linhas)
+├── karma.conf.js (77 linhas)
+├── gulpfile.js (5 linhas)
+├── package.json (68 linhas)
+├── contributing.md (72 linhas)
+├── README.md (108 linhas)
+├── frontpress.json.v2.sample (17 linhas)
+├── .travis.yml (12 linhas)
+├── LICENSE.md (22 linhas)
+├── .nvmrc (2 linhas)
+├── bower.json (27 linhas)
+├── .jshintrc (28 linhas)
+├── [ci]
+│   ├── travis_deploy.sh (70 linhas)
+│   └── compile.sh (5 linhas)
+├── .gitignore (12 linhas)
+├── .jshintignore (7 linhas)
+├── .editorconfig (13 linhas)
+├── [tasks]
+│   ├── watch.js (11 linhas)
+│   ├── templateCache.js (16 linhas)
+│   ├── inject.js (60 linhas)
+│   ├── release.js (75 linhas)
+│   ├── default.js (9 linhas)
+│   ├── init.js (48 linhas)
+│   ├── ngConfig.js (27 linhas)
+│   ├── connect.js (12 linhas)
+│   ├── copy.js (37 linhas)
+│   └── build.js (8 linhas)
+├── [release]
+│   ├── frontpress.min.js (3 linhas)
+│   ├── frontpress.v1.min.js (3 linhas)
+│   ├── frontpress.v1.js (7310 linhas)
+│   └── frontpress.js (7308 linhas)
+└── [src]
+    ├── index.html (17 linhas)
+    └── [js]
+        ├── frontpress.module.js (10 linhas)
+        ├── sample-blog.config.js (30 linhas)
+        ├── frontpress.config.js (9 linhas)
+        ├── frontpress.run.js (123 linhas)
+        ├── sample-blog-main.controller.js (14 linhas)
+        ├── sample-blog.module.js (9 linhas)
+        ├── [filters]
+        │   ├── trust-as-html.filter.js (13 linhas)
+        │   └── filters.module.js (4 linhas)
+        ├── [views]
+        │   ├── frontpress.views.module.js (4 linhas)
+        │   ├── [post]
+        │   │   ├── tag-directive.controller.js (71 linhas)
+        │   │   ├── tag-route.controller.js (9 linhas)
+        │   │   ├── post.module.js (13 linhas)
+        │   │   ├── post-directive.controller.js (61 linhas)
+        │   │   ├── post.template.html (3 linhas)
+        │   │   ├── post-route.controller.js (9 linhas)
+        │   │   └── post.directive.js (18 linhas)
+        │   ├── [home]
+        │   │   ├── home.template.html (7 linhas)
+        │   │   ├── home.module.js (12 linhas)
+        │   │   ├── home-route.controller.js (9 linhas)
+        │   │   ├── home-directive.controller.js (71 linhas)
+        │   │   └── home.directive.js (18 linhas)
+        │   ├── [tag]
+        │   │   ├── tag.template.html (8 linhas)
+        │   │   ├── tag.module.js (12 linhas)
+        │   │   └── tag.directive.js (18 linhas)
+        │   └── [category]
+        │       ├── category.template.html (7 linhas)
+        │       ├── category.module.js (12 linhas)
+        │       ├── category.directive.js (18 linhas)
+        │       ├── category-route.controller.js (9 linhas)
+        │       └── category-directive.controller.js (71 linhas)
+        ├── [components]
+        │   ├── [post-date]
+        │   │   ├── post-date.template.html (1 linhas)
+        │   │   ├── post-date.module.js (4 linhas)
+        │   │   ├── post-date-directive.controller.js (9 linhas)
+        │   │   └── post-date.directive.js (21 linhas)
+        │   ├── [page-head]
+        │   │   ├── page-head.template.html (10 linhas)
+        │   │   ├── page-head.module.js (4 linhas)
+        │   │   ├── page-head.directive.js (20 linhas)
+        │   │   ├── page-head.controller.js (10 linhas)
+        │   │   └── page-head.model.js (75 linhas)
+        │   ├── [slugs-map]
+        │   │   ├── slugs-map.model.js (58 linhas)
+        │   │   └── slug-to-id.module.js (4 linhas)
+        │   ├── [frontpress-provider]
+        │   │   ├── frontpress.model.js (283 linhas)
+        │   │   ├── frontpress-empty.constant.js (5 linhas)
+        │   │   └── frontpress-provider.module.js (4 linhas)
+        │   ├── [infinite-scroll]
+        │   │   └── infinite-scroll.value.js (4 linhas)
+        │   ├── [full-post]
+        │   │   ├── full-post.model.js (194 linhas)
+        │   │   ├── full-post.template.html (12 linhas)
+        │   │   ├── full-post.module.js (14 linhas)
+        │   │   ├── full-post.directive.js (19 linhas)
+        │   │   ├── full-post-directive.controller.js (10 linhas)
+        │   │   ├── [tags-list]
+        │   │   │   ├── full-post-tags-list.directive.js (21 linhas)
+        │   │   │   ├── full-post-tags-list.template.html (15 linhas)
+        │   │   │   └── full-post-tags-list-directive.controller.js (8 linhas)
+        │   │   ├── [generic]
+        │   │   │   └── full-post-generic-directive.controller.js (8 linhas)
+        │   │   ├── [content]
+        │   │   │   ├── full-post-title.directive.js (21 linhas)
+        │   │   │   ├── full-post-title-v1.template.html (1 linhas)
+        │   │   │   ├── full-post-content.directive.js (21 linhas)
+        │   │   │   ├── full-post-content-v1.template.html (1 linhas)
+        │   │   │   ├── full-post-author-name.directive.js (21 linhas)
+        │   │   │   ├── full-post-author-name.template.html (1 linhas)
+        │   │   │   ├── full-post-content-v2.template.html (1 linhas)
+        │   │   │   └── full-post-title-v2.template.html (1 linhas)
+        │   │   └── [categories-list]
+        │   │       ├── full-post-categories-list.template.html (14 linhas)
+        │   │       ├── full-post-categories-list.directive.js (19 linhas)
+        │   │       └── full-post-categories-list-directive.controller.js (8 linhas)
+        │   ├── [featured-image]
+        │   │   ├── featured-image.template.html (1 linhas)
+        │   │   ├── featured-image-directive.controller.js (8 linhas)
+        │   │   ├── featured-image.directive.js (21 linhas)
+        │   │   └── featured-image.module.js (4 linhas)
+        │   ├── [api-manager]
+        │   │   ├── api-manager.model.js (24 linhas)
+        │   │   └── api-manager.module.js (4 linhas)
+        │   ├── [ajax]
+        │   │   ├── ajax.tests.js (67 linhas)
+        │   │   ├── ajax.module.js (4 linhas)
+        │   │   └── ajax.model.js (39 linhas)
+        │   ├── [blog]
+        │   │   ├── blog.module.js (7 linhas)
+        │   │   └── blog.model.js (73 linhas)
+        │   ├── [pagination]
+        │   │   ├── pagination.template.html (8 linhas)
+        │   │   ├── pagination.model.js (68 linhas)
+        │   │   ├── pagination.module.js (6 linhas)
+        │   │   ├── pagination.directive.js (19 linhas)
+        │   │   └── pagination.controller.js (10 linhas)
+        │   ├── [share]
+        │   │   ├── share.template.html (7 linhas)
+        │   │   ├── share.module.js (7 linhas)
+        │   │   ├── share.directive.js (21 linhas)
+        │   │   ├── share.model.js (32 linhas)
+        │   │   └── share.controller.js (10 linhas)
+        │   └── [list-posts]
+        │       ├── list-posts.template.html (11 linhas)
+        │       ├── list-posts.directive.js (19 linhas)
+        │       ├── list-posts.module.js (12 linhas)
+        │       ├── list-posts-generic-directive.controller.js (8 linhas)
+        │       ├── list-posts.model.js (121 linhas)
+        │       ├── list-posts-directive.controller.js (10 linhas)
+        │       ├── [title]
+        │       │   ├── list-posts-title.directive.js (21 linhas)
+        │       │   ├── list-posts-title-v1.template.html (1 linhas)
+        │       │   └── list-posts-title-v2.template.html (1 linhas)
+        │       └── [excerpt]
+        │           ├── list-posts-excerpt-v2.template.html (1 linhas)
+        │           ├── list-posts-excerpt.directive.js (22 linhas)
+        │           └── list-posts-excerpt-v1.template.html (1 linhas)
+        └── [apis]
+            ├── [configs-to-params]
+            │   ├── configs-to-params.module.js (4 linhas)
+            │   └── [models]
+            │       └── configs-to-params.model.js (25 linhas)
+            ├── [v1]
+            │   ├── [posts]
+            │   │   ├── posts.module.js (8 linhas)
+            │   │   └── [models]
+            │   │       └── posts-api.model.js (35 linhas)
+            │   ├── [blog]
+            │   │   ├── blog.module.js (4 linhas)
+            │   │   └── [models]
+            │   │       └── blog-api.model.js (19 linhas)
+            │   ├── [tags]
+            │   │   ├── tags.module.js (4 linhas)
+            │   │   └── [models]
+            │   │       └── tags-api.model.js (30 linhas)
+            │   ├── [categories]
+            │   │   ├── categories.module.js (4 linhas)
+            │   │   └── [models]
+            │   │       └── categories-api.model.js (28 linhas)
+            │   ├── [api-manager-map]
+            │   │   ├── api-manager-map.module.js (4 linhas)
+            │   │   └── [constants]
+            │   │       └── api-manager-map.constant.js (13 linhas)
+            │   └── [media]
+            │       ├── media.module.js (4 linhas)
+            │       └── [models]
+            │           └── media-api.model.js (21 linhas)
+            └── [v2]
+                ├── [posts]
+                │   ├── posts.module.js (4 linhas)
+                │   └── [models]
+                │       └── posts-api.model.js (37 linhas)
+                ├── [categories]
+                │   ├── categories.module.js (4 linhas)
+                │   └── [models]
+                │       └── categories-api.model.js (28 linhas)
+                ├── [media]
+                │   ├── media.module.js (4 linhas)
+                │   └── [models]
+                │       └── media-api.model.js (21 linhas)
+                ├── [tags]
+                │   ├── tags.module.js (4 linhas)
+                │   └── [models]
+                │       └── tags-api.model.js (29 linhas)
+                ├── [blog]
+                │   ├── blog.module.js (4 linhas)
+                │   └── [models]
+                │       └── blog-api.model.js (20 linhas)
+                └── [api-manager-map]
+                    ├── api-manager-map.module.js (4 linhas)
+                    └── [constants]
+                        └── api-manager-map.constant.js (13 linhas)
