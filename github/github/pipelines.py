@@ -6,7 +6,7 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 from scrapy.exporters import JsonItemExporter
 #from urllib.parse import unquote
-import urllib2
+from urllib.parse import unquote
 import re
 import os
 
@@ -62,7 +62,7 @@ class FileInfosPipeline(object):
 			#if file description dont have lines lenght
 			item['lines'] = 0
 			item['_bytes'] = get_bytes(item['info'][0])
-		item['full_path'] = urllib2.unquote(item['url'][19:])
+		item['full_path'] = unquote(item['url'][19:])
 		item['path'] = get_path(item['full_path'])
 		temp_filename, file_extension = os.path.splitext(item['full_path'])
 		item['file_extension'] = '<outros>' if file_extension == '' else file_extension[1:]
@@ -77,7 +77,7 @@ class JsonWriterPipeline(object):
 
     def open_spider(self, spider):
         basedir = os.path.abspath(os.path.dirname(__file__))
-        self.file = open(os.path.join(basedir, 'items.json'), 'w')
+        self.file = open(os.path.join(basedir, 'items.json'), 'wb')
         self.exporter = JsonItemExporter(self.file)
         self.exporter.start_exporting()
 

@@ -6,14 +6,18 @@ from github.items import File
 class GithubRepositoriesSpider(scrapy.Spider):
 	name = 'repositories'
 
+	def __init__(self, **kwargs):
+		super(GithubRepositoriesSpider, self).__init__(**kwargs)
+		repositories = kwargs.get('repositories')
+		self.start_urls = []
+		for r in repositories:
+			self.start_urls.append('https://github.com/%s' % r)
 
-	def start_requests(self):
-		#repositories = ['frontpressorg/frontpress']
-		filename = '/home/amarel/vagas/github_scrapy/github/github/respositories.txt'
-		repositories = [line.rstrip('\n') for line in open(filename)]
+	'''
+	def start_requests(self, repositories=None):
 		for r in repositories:
 			yield scrapy.Request(url='https://github.com/%s' % r, callback=self.parse)
-
+	'''
 
 	def parse(self, response):
 		info = response.xpath('//div[@class="file-info"]/text()').extract()
