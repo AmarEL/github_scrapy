@@ -15,7 +15,7 @@ def create_nodes(filename):
 
 
 def create_node_paths(leaf_nodes_list):
-	#using the files nodes, creates RepositoryNodes to represent the folders of the repository
+	#for each node, creates RepositoryNodes to represent the folders of the current path if it does not exist yet
 	#return two dicts that represents the root nodes(repostitories) and the paths nodes (folders)
 	repositories_dict = {}
 	folder_nodes_dict = {}
@@ -87,6 +87,7 @@ def parse_items():
 		repository_filename = get_repository_filename(root.repository)
 		with open(repository_filename, "w") as text_file:
 			text_file.write(root.repository)
+			text_file.write('\n')
 			text_file.write('\n')
 			text_file.write(get_repository_infos_print_format(repository_detail))
 			text_file.write('\n')
