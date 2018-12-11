@@ -18,7 +18,7 @@ Python3.6
 
 ## Crawler Execution  
 1. Mova o arquivo de entrada 'repositories.txt' para a raiz do projeto  
-2. Execute o crawler com o comando:  
+2. Na raiz do projeto, execute o crawler com o comando:  
     $ python github_crawler.py repositories.txt 
 
 Os resultados podem ser visualizados no diretório "repositories", em que cada corresponde a um repositório.  
